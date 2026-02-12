@@ -1,72 +1,124 @@
-/* Estilo geral do corpo */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  background-attachment: fixed;
-  color: white;
-  text-align: center;
-  padding: 50px;
+/* Reset simples */
+* {
   margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Container centralizado */
+/* Corpo da página */
+body {
+  font-family: 'Arial', Helvetica, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container principal */
 .container {
-  background-color: rgba(0, 0, 0, 0.4);
-  max-width: 600px;
-  margin: auto;
-  padding: 30px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 40px 30px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
 }
 
 /* Títulos */
 h1 {
-  margin-bottom: 10px;
+  font-size: 2.2em;
+  margin-bottom: 15px;
 }
 
 h2 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-size: 22px;
+  font-size: 1.8em;
+  margin: 25px 0 15px 0;
 }
 
 /* Parágrafos */
 p {
-  font-size: 18px;
+  font-size: 1.1em;
   line-height: 1.6;
   margin-bottom: 15px;
 }
 
-/* Lista */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-ul li {
-  margin: 8px 0;
-  font-size: 16px;
-}
-
-/* Links */
-a {
-  color: #9bd0ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Linha horizontal estilizada */
+/* Linha horizontal */
 hr {
   border: 0;
   height: 1px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255,255,255,0.3);
+  margin: 25px 0;
+}
+
+/* Lista de skills */
+ul.skills {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
   margin: 20px 0;
+}
+
+ul.skills li {
+  background: rgba(255,255,255,0.1);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+ul.skills li:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Botões de contato */
+.contact {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: #4c6ef5;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #364fc7;
+  transform: translateY(-2px);
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  .container {
+    padding: 30px 20px;
+  }
 }
