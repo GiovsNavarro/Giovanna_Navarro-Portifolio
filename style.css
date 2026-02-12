@@ -23,7 +23,7 @@ body {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  max-height: 110%; /* um pouco maior */
+  max-height: 130%; /* um pouco maior */
   opacity: 0.95;
   z-index: 1;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .side-img.right {
-  right: 90px; /* afasta da borda, mais próximo do container */
+  right: 75px; /* afasta da borda, mais próximo do container */
 }
 
 /* Responsivo - no celular escondemos para não atrapalhar */
