@@ -33,7 +33,7 @@ body {
 }
 
 .side-img.right {
-  right: 100px; /* afastada da borda, mais próximo do container */
+  right: 120px; /* afastada da borda, mais próximo do container */
 }
 
 /* Responsivo - no celular escondemos */
