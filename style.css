@@ -1,4 +1,4 @@
-/* Reset simples */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -18,12 +18,12 @@ body {
   padding: 20px;
 }
 
-/* Container principal */
+/* Container */
 .container {
   background-color: rgba(0,0,0,0.5);
   padding: 40px 30px;
   border-radius: 15px;
-  max-width: 650px;
+  max-width: 700px;
   width: 100%;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
   transition: transform 0.3s ease;
@@ -34,22 +34,12 @@ body {
 }
 
 /* Títulos */
-h1 {
-  font-size: 2.2em;
-  margin-bottom: 15px;
-}
-
-h2 {
-  font-size: 1.8em;
-  margin: 25px 0 15px 0;
-}
+h1 { font-size: 2.2em; margin-bottom: 15px; }
+h2 { font-size: 1.8em; margin: 25px 0 15px 0; }
+h3 { font-size: 1.3em; margin: 10px 0; }
 
 /* Parágrafos */
-p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
+p { font-size: 1.1em; line-height: 1.6; margin-bottom: 15px; }
 
 /* Linha horizontal */
 hr {
@@ -59,7 +49,7 @@ hr {
   margin: 25px 0;
 }
 
-/* Lista de skills */
+/* Skills */
 ul.skills {
   list-style: none;
   display: flex;
@@ -77,19 +67,37 @@ ul.skills li {
   transition: background 0.3s ease;
 }
 
-ul.skills li:hover {
-  background: rgba(255,255,255,0.3);
-}
+ul.skills li:hover { background: rgba(255,255,255,0.3); }
 
-/* Botões de contato */
-.contact {
-  margin-top: 15px;
+/* Projetos */
+.projects {
   display: flex;
-  justify-content: center;
-  gap: 15px;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
 }
 
+.project-card {
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 15px;
+  width: 250px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.2);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Botões */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -108,17 +116,29 @@ ul.skills li:hover {
   transform: translateY(-2px);
 }
 
+/* Contato */
+.contact {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 /* Responsivo */
+@media (max-width: 700px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 80%;
+  }
+}
+
 @media (max-width: 500px) {
-  h1 {
-    font-size: 1.8em;
-  }
-
-  h2 {
-    font-size: 1.4em;
-  }
-
-  .container {
-    padding: 30px 20px;
-  }
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.4em; }
+  .container { padding: 30px 20px; }
 }
