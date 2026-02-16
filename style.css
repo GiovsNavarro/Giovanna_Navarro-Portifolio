@@ -5,17 +5,16 @@
   box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* Fundo */
 body {
-  font-family: 'Arial', Helvetica, sans-serif;
-  background: linear-gradient(135deg, #4b4ca2, #3b3f8a); /* roxo mais escuro e profissional */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2e2f6e, #1c1d4f);
   color: white;
   display: flex;
   justify-content: center;
   padding: 20px;
   min-height: 100vh;
   position: relative;
-  line-height: 1.5;
 }
 
 /* Imagens laterais */
@@ -23,111 +22,107 @@ body {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  max-height: 150%; /* aumentadas */
-  opacity: 0.95;
+  max-height: 90%;
+  opacity: 0.9;
   z-index: 1;
 }
 
 .side-img.left {
-  left: 100px; /* afastada da borda, mais próximo do container */
+  left: 80px;
 }
 
 .side-img.right {
-  right: 120px; /* afastada da borda, mais próximo do container */
+  right: 80px;
 }
 
-/* Responsivo - no celular escondemos */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .side-img {
     display: none;
   }
 }
 
-/* Container central */
+/* Container */
 .container {
-  background-color: rgba(0,0,0,0.65); /* mais contraste com o roxo escuro */
+  background: rgba(0, 0, 0, 0.65);
   padding: 50px 40px;
-  border-radius: 15px;
-  max-width: 750px; /* container um pouco maior */
+  border-radius: 20px;
+  max-width: 950px;
   width: 100%;
-  z-index: 2; /* acima das imagens */
-  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+  z-index: 2;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
 }
 
 /* Títulos */
-h1 { 
-  font-size: 2em; /* menor que antes */
+h1 {
+  text-align: center;
   margin-bottom: 20px;
-  text-align: center; 
+  font-size: 2em;
 }
 
-h2 { 
-  font-size: 1.5em; /* menor e profissional */
-  margin: 30px 0 15px 0; 
-  text-align: center; 
+h2 {
+  text-align: center;
+  margin: 35px 0 20px 0;
 }
 
-h3 { 
-  font-size: 1.2em; 
-  margin: 10px 0; 
-  text-align: center; 
+h3 {
+  text-align: center;
+  margin: 10px 0;
 }
 
-/* Parágrafos */
-p { 
-  font-size: 1em; /* mais discreto */
-  line-height: 1.6; 
-  margin-bottom: 15px; 
-  text-align: center; 
+/* Texto */
+p {
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
 /* Skills */
-ul.skills {
+.skills {
   list-style: none;
   display: flex;
   justify-content: center;
+  gap: 15px;
   flex-wrap: wrap;
-  gap: 12px;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
-ul.skills li {
-  background: rgba(255,255,255,0.12);
-  padding: 7px 12px;
+.skills li {
+  background: rgba(255,255,255,0.15);
+  padding: 8px 15px;
   border-radius: 20px;
-  font-size: 0.95em;
-  transition: background 0.3s ease;
+  font-size: 0.9em;
+  transition: 0.3s;
 }
 
-ul.skills li:hover { 
-  background: rgba(255,255,255,0.25); 
+.skills li:hover {
+  background: rgba(255,255,255,0.3);
 }
 
 /* Projetos */
 .projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
-  margin: 25px 0;
 }
 
 .project-card {
   background: rgba(255,255,255,0.12);
-  padding: 15px;
-  border-radius: 15px;
-  width: 260px; /* levemente maior */
-  transition: transform 0.3s ease, background 0.3s ease;
+  padding: 18px;
+  border-radius: 18px;
+  width: 280px;
+  text-align: center;
+  transition: 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   background: rgba(255,255,255,0.22);
 }
 
 .project-card img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-bottom: 10px;
 }
 
@@ -135,48 +130,46 @@ ul.skills li:hover {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   text-decoration: none;
+  background: linear-gradient(45deg, #5f60d3, #7c7df5);
   color: white;
-  background-color: #3b3f8a; /* mais escuro e profissional */
   padding: 10px 18px;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #2e306b;
-  transform: translateY(-2px);
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.btn.disabled {
+  background: gray;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 /* Contato */
 .contact {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 /* Responsivo */
-@media (max-width: 900px) {
-  .container {
-    max-width: 90%;
-    padding: 35px 20px;
-  }
-
+@media (max-width: 768px) {
   .projects {
     flex-direction: column;
     align-items: center;
   }
 
   .project-card {
-    width: 80%;
+    width: 90%;
   }
-}
-
-@media (max-width: 500px) {
-  h1 { font-size: 1.6em; }
-  h2 { font-size: 1.3em; }
 }
