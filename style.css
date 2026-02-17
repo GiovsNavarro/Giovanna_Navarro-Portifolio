@@ -23,7 +23,7 @@ body {
   left: auto;
   right: auto;
   transform: translateY(-50%);
-  height: 90vh;   /* controla o tamanho real */
+  height: 82vh;   /* controla o tamanho real */
   max-height: none;
   width: auto;
   opacity: 0.95;
