@@ -23,7 +23,7 @@ body {
   left: auto;
   right: auto;
   transform: translateY(-50%);
-  height: 80vh;   /* controla o tamanho real */
+  height: 90vh;   /* controla o tamanho real */
   max-height: none;
   width: auto;
   opacity: 0.95;
@@ -31,13 +31,11 @@ body {
 }
 
 .side-img.left {
-  left: 40px;
-  max-height: 180%;
+  left: 0px;
 }
 
 .side-img.right {
-  right: 4px;
-  max-height: 100%;
+  right: 0px;
 }
 
 /* ESCONDER EM TELAS MENORES */
