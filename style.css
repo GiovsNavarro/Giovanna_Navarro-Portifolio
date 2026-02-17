@@ -20,8 +20,12 @@ body {
 .side-img {
   position: fixed;
   top: 50%;
+  left: auto;
+  right: auto;
   transform: translateY(-50%);
-  max-height: 110%;
+  height: 80vh;   /* controla o tamanho real */
+  max-height: none;
+  width: auto;
   opacity: 0.95;
   z-index: 1;
 }
