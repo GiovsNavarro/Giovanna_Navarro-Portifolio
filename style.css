@@ -28,11 +28,11 @@ body {
 
 .side-img.left {
   left: 40px;
-  max-height: 140%;
+  max-height: 160%;
 }
 
 .side-img.right {
-  right: 20px;
+  right: 10px;
   max-height: 100%;
 }
 
