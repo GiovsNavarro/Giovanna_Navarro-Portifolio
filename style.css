@@ -19,7 +19,7 @@ body {
 /* IMAGENS LATERAIS MAIORES */
 .side-img {
   position: fixed;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   max-height: 110%;
   opacity: 0.95;
@@ -28,7 +28,7 @@ body {
 
 .side-img.left {
   left: 40px;
-  max-height: 180%;
+  max-height: 380%;
 }
 
 .side-img.right {
