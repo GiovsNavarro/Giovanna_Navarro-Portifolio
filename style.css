@@ -10,7 +10,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: radial-gradient(circle at top, #3d2c8d, #1b1238 70%);
   color: white;
-  min-height: 100vh;
+  min-height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,11 +28,11 @@ body {
 
 .side-img.left {
   left: 40px;
-  max-height: 160%;
+  max-height: 180%;
 }
 
 .side-img.right {
-  right: 10px;
+  right: 7px;
   max-height: 100%;
 }
 
