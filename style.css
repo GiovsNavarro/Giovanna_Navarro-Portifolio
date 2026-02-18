@@ -21,18 +21,18 @@ body {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  height: 72vh;
+  height: 85vh;
   width: auto;
   opacity: 0.95;
   z-index: 1;
 }
 
 .side-img.left {
-  left: 10px;
+  left: 30px;
 }
 
 .side-img.right {
-  right: 10px;
+  right: 30px;
 }
 
 /* ESCONDER EM TELAS MENORES */
@@ -107,8 +107,8 @@ p {
   background: rgba(255,255,255,0.12);
   padding: 25px;
   border-radius: 20px;
-  width: 85%;   /* mantém o tamanho visual parecido com o da imagem */
-  max-width: 750px;
+  width: 75%;   /* mantém o tamanho visual parecido com o da imagem */
+  max-width: 670px;
   transition: 0.3s ease;
 }
 
