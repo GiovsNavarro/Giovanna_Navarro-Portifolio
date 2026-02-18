@@ -21,18 +21,19 @@ body {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  height: 50vh;
   width: auto;
   opacity: 0.95;
   z-index: 1;
 }
 
 .side-img.left {
-  left: 20px;
+  left: 30px;
+  height: 60vh;
 }
 
 .side-img.right {
-  right: 20px;
+  right: 30px;
+  height: 45vh;
 }
 
 /* ESCONDER EM TELAS MENORES */
