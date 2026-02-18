@@ -21,14 +21,14 @@ body {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  height: 32vh;
+  height: 72vh;
   width: auto;
   opacity: 0.95;
   z-index: 1;
 }
 
 .side-img.left {
-  left: 8px;
+  left: 10px;
 }
 
 .side-img.right {
@@ -107,8 +107,8 @@ p {
   background: rgba(255,255,255,0.12);
   padding: 25px;
   border-radius: 20px;
-  width: 95%;   /* mantém o tamanho visual parecido com o da imagem */
-  max-width: 780px;
+  width: 85%;   /* mantém o tamanho visual parecido com o da imagem */
+  max-width: 750px;
   transition: 0.3s ease;
 }
 
