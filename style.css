@@ -22,18 +22,18 @@ body {
   top: 50%;
   transform: translateY(-50%);
   width: auto;
-  opacity: 0.95;
+  opacity: 0.98;
   z-index: 1;
 }
 
 .side-img.left {
-  left: 40px;
-  height: 70vh;
+  left: 50px;
+  height: 67vh;
 }
 
 .side-img.right {
-  right: 40px;
-  height: 45vh;
+  right: 4px;
+  height: 47vh;
 }
 
 /* ESCONDER EM TELAS MENORES */
