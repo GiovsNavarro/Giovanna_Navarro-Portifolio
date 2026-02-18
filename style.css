@@ -28,12 +28,12 @@ body {
 
 .side-img.left {
   left: 10px;
-  height: 58vh;
+  height: 50vh;
 }
 
 .side-img.right {
   right: 10px;
-  height: 38vh;
+  height: 30vh;
 }
 
 /* ESCONDER EM TELAS MENORES */
