@@ -21,7 +21,7 @@ body {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  height: 85vh;
+  height: 70vh;
   width: auto;
   opacity: 0.95;
   z-index: 1;
