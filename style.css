@@ -21,7 +21,7 @@ body {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  height: 40vh;
+  height: 60vh;
   width: auto;
   opacity: 0.95;
   z-index: 1;
@@ -73,6 +73,7 @@ h3 {
 p {
   margin-bottom: 15px;
   line-height: 1.6;
+  font-size: 1.2rem;
 }
 
 /* SKILLS */
