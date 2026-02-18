@@ -100,14 +100,15 @@ p {
   display: flex;
   flex-direction: column;   /* ESSA É A ÚNICA MUDANÇA REAL */
   align-items: center;
-  gap: 25px;
+  gap: 35px;
 }
 
 .project-card {
   background: rgba(255,255,255,0.12);
-  padding: 18px;
+  padding: 25px;
   border-radius: 20px;
-  width: 320px;   /* mantém o tamanho visual parecido com o da imagem */
+  width: 90%;   /* mantém o tamanho visual parecido com o da imagem */
+  max-width: 750px;
   transition: 0.3s ease;
 }
 
