@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* FUNDO NOVO (mais moderno) */
+/* FUNDO */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: radial-gradient(circle at top, #3d2c8d, #1b1238 70%);
@@ -16,7 +16,7 @@ body {
   align-items: center;
 }
 
-/* IMAGENS LATERAIS MAIORES */
+/* IMAGENS LATERAIS */
 .side-img {
   position: fixed;
   top: 50%;
@@ -42,7 +42,7 @@ body {
   }
 }
 
-/* CONTAINER MAIS FINO E CENTRAL */
+/* CONTAINER */
 .container {
   background: rgba(0, 0, 0, 0.75);
   width: 65%;
@@ -95,10 +95,10 @@ p {
   background: rgba(255,255,255,0.3);
 }
 
-/* PROJETOS - AGORA UM POR LINHA */
+/* ===== PROJETOS (AGORA UM POR LINHA) ===== */
 .projects {
   display: flex;
-  flex-direction: column;   /* força ficar um embaixo do outro */
+  flex-direction: column;   /* ESSA É A ÚNICA MUDANÇA REAL */
   align-items: center;
   gap: 25px;
 }
@@ -107,8 +107,7 @@ p {
   background: rgba(255,255,255,0.12);
   padding: 18px;
   border-radius: 20px;
-  width: 100%;              /* ocupa toda largura do container */
-  max-width: 600px;         /* não deixa gigante demais */
+  width: 320px;   /* mantém o tamanho visual parecido com o da imagem */
   transition: 0.3s ease;
 }
 
