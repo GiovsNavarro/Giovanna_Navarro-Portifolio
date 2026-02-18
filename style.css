@@ -27,13 +27,13 @@ body {
 }
 
 .side-img.left {
-  left: 50px;
-  height: 67vh;
+  left: 5px;
+  height: 62vh;
 }
 
 .side-img.right {
   right: 4px;
-  height: 47vh;
+  height: 42vh;
 }
 
 /* ESCONDER EM TELAS MENORES */
