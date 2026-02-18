@@ -21,18 +21,18 @@ body {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  height: 52vh;
+  height: 32vh;
   width: auto;
   opacity: 0.95;
   z-index: 1;
 }
 
 .side-img.left {
-  left: 0px;
+  left: 8px;
 }
 
 .side-img.right {
-  right: 0px;
+  right: 10px;
 }
 
 /* ESCONDER EM TELAS MENORES */
@@ -100,15 +100,15 @@ p {
   display: flex;
   flex-direction: column;   /* ESSA É A ÚNICA MUDANÇA REAL */
   align-items: center;
-  gap: 45px;
+  gap: 40px;
 }
 
 .project-card {
   background: rgba(255,255,255,0.12);
   padding: 25px;
   border-radius: 20px;
-  width: 100%;   /* mantém o tamanho visual parecido com o da imagem */
-  max-width: 800px;
+  width: 95%;   /* mantém o tamanho visual parecido com o da imagem */
+  max-width: 780px;
   transition: 0.3s ease;
 }
 
