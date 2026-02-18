@@ -5,155 +5,79 @@
   box-sizing: border-box;
 }
 
-/* FUNDO NOVO (mais moderno) */
+/* BODY */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: radial-gradient(circle at top, #3d2c8d, #1b1238 70%);
   color: white;
-  min-height: 110vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 40px 0;
 }
 
-/* IMAGENS LATERAIS MAIORES */
-.side-img {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 52vh;   /* controla o tamanho real */
-  width: auto;
-  opacity: 0.95;
-  z-index: 1;
-}
-
-.side-img.left {
-  left: 0px;
-}
-
-.side-img.right {
-  right: 0px;
-}
-
-/* ESCONDER EM TELAS MENORES */
-@media (max-width: 1200px) {
-  .side-img {
-    display: none;
-  }
-}
-
-/* CONTAINER MAIS FINO E CENTRAL */
+/* CONTAINER PRINCIPAL */
 .container {
-  background: rgba(0, 0, 0, 0.75);
-  width: 65%;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 85%;
   max-width: 900px;
-  padding: 40px 30px;
-  border-radius: 25px;
-  text-align: center;
-  z-index: 2;
+  padding: 40px;
+  border-radius: 20px;
   backdrop-filter: blur(8px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
 }
 
 /* TÍTULOS */
 h1 {
-  margin-bottom: 20px;
-  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
 }
 
 h2 {
-  margin: 40px 0 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
 }
 
-h3 {
-  margin: 12px 0;
-}
-
-/* TEXTO */
+/* PARÁGRAFOS */
 p {
   margin-bottom: 15px;
   line-height: 1.6;
 }
 
-/* SKILLS */
-.skills {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.skills li {
-  background: rgba(255,255,255,0.15);
-  padding: 8px 18px;
-  border-radius: 25px;
-  transition: 0.3s;
-}
-
-.skills li:hover {
-  background: rgba(255,255,255,0.3);
-}
-
-/* PROJETOS */
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-}
-
-.project-card {
-  background: rgba(255,255,255,0.12);
-  padding: 18px;
-  border-radius: 20px;
-  width: 260px;
-  transition: 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  background: rgba(255,255,255,0.25);
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 15px;
-  margin-bottom: 10px;
-}
-
-/* BOTÕES */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: linear-gradient(45deg, #7b2ff7, #9c4dff);
-  color: white;
+/* LINKS */
+a {
+  color: #d6c6ff;
   text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 30px;
-  font-weight: 600;
-  margin-top: 10px;
   transition: 0.3s;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
-.btn.disabled {
-  background: gray;
-  cursor: not-allowed;
-  pointer-events: none;
+/* IMAGENS LATERAIS */
+.side-img {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 75vh;   /* tamanho equilibrado */
+  width: auto;
+  opacity: 0.95;
+  z-index: 0;
 }
 
-/* CONTATO */
-.contact {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 25px;
+/* POSIÇÃO ESQUERDA */
+.side-img.left {
+  left: 40px;
+}
+
+/* POSIÇÃO DIREITA */
+.side-img.right {
+  right: 40px;
 }
